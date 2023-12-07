@@ -3,8 +3,8 @@ import "./Colors.css"
 function Colors() {
   return (
     <div>
-      <h2 className="sidebar-title">Colors</h2>
-        <label className="sidebar-label-container color-title">
+      <h2 className="sidebar-title color-title">Colors</h2>
+        <label className="sidebar-label-container">
           <input type="radio" name="test2"/>
           <span className="checkmark"></span>All
         </label>
