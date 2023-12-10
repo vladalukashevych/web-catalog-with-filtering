@@ -15,14 +15,14 @@ function Colors({handleChange}) {
                 value="black"
                 title="Black"
                 name="test3"
-                color="blue"
+                color="black"
             />
             <Input
                 handleChange={handleChange}
                 value="blue"
                 title="Blue"
                 name="test3"
-                color="black"
+                color="blue"
             />
             <Input
                 handleChange={handleChange}
@@ -50,6 +50,7 @@ function Colors({handleChange}) {
                     className="checkmark"
                     style={{ background: "white", border: "2px solid black" }}
                 ></span>
+                All
             </label>
         </div>
     );
