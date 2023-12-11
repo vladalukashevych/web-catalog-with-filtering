@@ -18,7 +18,7 @@ function Card({img, title, stars, reviews, newPrice, prevPrice}) {
                 </section>
                 <section className="card-price">
                     <div className="price">
-                        <del>{prevPrice}</del>
+                        <del className="previous-price">{prevPrice}</del>
                         {newPrice}
                     </div>
 

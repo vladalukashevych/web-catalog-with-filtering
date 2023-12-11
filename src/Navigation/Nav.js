@@ -11,7 +11,7 @@ const Nav = ({handleInputChange, query}) => {
                     type="text"
                     onChange={handleInputChange}
                     value={query}
-                    placeholder="Enter shoes name."
+                    placeholder="Enter shoes name..."
                 />
             </div>
 

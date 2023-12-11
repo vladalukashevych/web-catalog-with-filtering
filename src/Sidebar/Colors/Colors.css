@@ -1,17 +1,14 @@
 .color-title {
-    margin-top: 2rem;
+    margin-top: 50px;
 }
 
-.all {
-    background: linear-gradient(blue, crimson);
-}
 .sidebar-label-container .checkmark-light:after  {
         top: 6.4px;
         left: 6.4px;
         width: 7px;
         height: 7px;
         border-radius: 50%;
-        background: gray;
+        background: #96bcda;
 }
 
 .checkmark-light {
