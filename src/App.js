@@ -10,7 +10,7 @@ import products from "./db/data";
 import Card from "./components/Card";
 
 function App() {
-    const [selectedCategory, setSelectedCategory] = useState(null);
+    const [selectedCategory, setSelectedCategory] = useState({});
 
     //---------------Input Filter---------------
     const[query, setQuery] = useState("");
@@ -25,12 +25,24 @@ function App() {
 
     //---------------Radio Filter---------------
     const handleChange = event => {
-        setSelectedCategory(event.target.value)
+        let name = event.target.name;
+        let value = event.target.value;
+
+        setSelectedCategory({
+          ...selectedCategory, 
+          [name]: value,
+        });
     };
 
     //---------------Buttons Filter---------------
     const handleClick = (event) => {
-        setSelectedCategory(event.target.value);
+        let name = event.target.name;
+        let value = event.target.value;
+        
+        setSelectedCategory({
+          ...selectedCategory, 
+          [name]: value,
+        });
     }
     function filteredData(products, selected, query) {
       let filteredProducts = products;
@@ -41,14 +53,18 @@ function App() {
 
       // Selected Filter
       if(selected) {
-        filteredProducts = filteredProducts.filter(
-          ({ category, color, company, newPrice, title }) => 
-          category === selected || 
-          color === selected ||
-          company === selected ||
-          newPrice === selected ||
-          title === selected
-          );
+        for (let key in selected) {
+          if (selected.hasOwnProperty(key)) {
+            filteredProducts = filteredProducts.filter(
+              ({ category, color, company, newPrice, title }) => 
+              category.includes(selected[key]) || 
+              color.includes(selected[key]) ||
+              company.includes(selected[key]) ||
+              newPrice === selected[key] ||
+              title.includes(selected[key])
+            );
+          }
+        }
       }
 
       return filteredProducts.map(({img, title, star, reviews, newPrice, prevPrice}) => (

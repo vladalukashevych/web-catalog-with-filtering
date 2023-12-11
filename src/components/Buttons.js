@@ -1,9 +1,9 @@
-function Buttons({onClickHandler, value, title}) {
+function Button({onClickHandler, value, title, name}) {
     return (
-        <button onClick={onClickHandler} value={value} className="btns">
+        <button onClick={onClickHandler} value={value} name={name} className="btns">
           {title}
         </button>
     );
 }
 
-export default Buttons;
+export default Button;

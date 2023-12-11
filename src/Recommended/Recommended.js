@@ -1,16 +1,16 @@
 import "./Recommended.css"
-import Buttons from "../components/Buttons";
+import Button from "../components/Buttons";
 
 function Recommended({handleClick}) {
     return (
         <div>
             <h2 className="recommended-title">Recommended</h2>
             <div className="recommended-flex">
-                <Buttons onClickHandler={handleClick} value="" title="All Products"/>
-                <Buttons onClickHandler={handleClick} value="Nike" title="Nike"/>
-                <Buttons onClickHandler={handleClick} value="Adidas" title="Adidas"/>
-                <Buttons onClickHandler={handleClick} value="Puma" title="Puma"/>
-                <Buttons onClickHandler={handleClick} value="Vans" title="Vans"/>
+                <Button onClickHandler={handleClick} value="" title="All Products" name="recommended"/>
+                <Button onClickHandler={handleClick} value="Nike" title="Nike" name="recommended"/>
+                <Button onClickHandler={handleClick} value="Adidas" title="Adidas" name="recommended"/>
+                <Button onClickHandler={handleClick} value="Puma" title="Puma" name="recommended"/>
+                <Button onClickHandler={handleClick} value="Vans" title="Vans" name="recommended"/>
             </div>
         </div>
     );
