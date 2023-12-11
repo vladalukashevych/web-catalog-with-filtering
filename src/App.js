@@ -11,15 +11,16 @@ import Card from "./components/Card";
 
 function App() {
     const [selectedCategory, setSelectedCategory] = useState(null);
-    const[query, setQuery] = useState("");
 
     //---------------Input Filter---------------
+    const[query, setQuery] = useState("");
+
     const handleInputChange = event => {
         setQuery(event.target.value)
     };
 
     const filteredItems = products.filter(
-        product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+        product => product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
     );
 
     //---------------Radio Filter---------------
@@ -63,7 +64,7 @@ function App() {
       ));
     }
 
-    const result = filteredData(products, selectedCategory, query)
+    const result = filteredData(products, selectedCategory, query);
 
   return (
     <>
