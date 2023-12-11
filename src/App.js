@@ -67,12 +67,12 @@ function App() {
         }
       }
 
-      return filteredProducts.map(({img, title, star, reviews, newPrice, prevPrice}) => (
+      return filteredProducts.map(({img, title, stars, reviews, newPrice, prevPrice}) => (
         <Card 
         key={Math.random()}
         img={img}
         title={title}
-        star={star}
+        stars={stars}
         reviews={reviews}
         newPrice={newPrice}
         prevPrice={prevPrice}
