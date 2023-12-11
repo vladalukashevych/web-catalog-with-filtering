@@ -5,3 +5,15 @@
 .all {
     background: linear-gradient(blue, crimson);
 }
+.sidebar-label-container .checkmark-light:after  {
+        top: 6.4px;
+        left: 6.4px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: gray;
+}
+
+.checkmark-light {
+    border: 1px solid #bfbfbf;
+}

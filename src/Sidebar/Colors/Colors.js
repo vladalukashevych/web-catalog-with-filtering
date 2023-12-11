@@ -47,10 +47,10 @@ function Colors({handleChange}) {
                     name="color"
                 />
                 <span
-                    className="checkmark"
-                    style={{ background: "white", border: "2px solid black" }}
+                    className="checkmark checkmark-light"
+                    style={{ backgroundColor: "white"}}
                 ></span>
-                All
+                White
             </label>
         </div>
     );
