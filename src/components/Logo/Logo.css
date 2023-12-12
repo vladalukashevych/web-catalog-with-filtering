@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-container {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0 10px;
+    border-bottom: 3px solid #724808;
+}
+
+.logo-container span {
+    font-size: 80px;
+    margin-top: 1.3rem;
+}
+
+.logo-name {
+    font-size: 40px;
+    font-weight: 700;
+    color: #724808;
+}

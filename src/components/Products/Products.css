@@ -9,7 +9,7 @@
 }
 
 .card {
-    width: 13rem;
+    width: 20rem;
     margin: 15px 10px;
     border: 3px solid #ededed;
     border-radius: 10px;
@@ -58,10 +58,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*padding: 10px;*/
-    margin-bottom: 0.4rem;
     text-align: center;
-    width: 13rem;
 }
 
 .bag-icon {
@@ -80,28 +77,6 @@
 .previous-price {
     margin-right: 0.5rem;
     font-size: smaller;
-}
-
-.btns.btn-buy {
-    width: 100%;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    border-radius: 10px;
-    background-color: #d48c00;
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: medium;
-    align-self: flex-end;
-}
-
-.btns.btn-buy:hover {
-    background-color: #865b01;
-}
-
-.card-details {
-    height: 13rem;
 }
 
 .title-reviews {

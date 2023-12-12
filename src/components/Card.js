@@ -1,6 +1,5 @@
 import {AiFillStar} from "react-icons/ai";
 import {BsFillBagHeartFill} from "react-icons/bs";
-import Button from "./Buttons";
 
 function Card({img, title, stars, reviews, newPrice, prevPrice}) {
 
@@ -28,7 +27,6 @@ function Card({img, title, stars, reviews, newPrice, prevPrice}) {
                 {/*<div className="bag">*/}
                 {/*    <BsFillBagHeartFill className="bag-icon"/>*/}
                 {/*</div>*/}
-                <Button value={title} title="Add to cart" name="buy" className="btn-buy"/>
 
             </div>
         </section>

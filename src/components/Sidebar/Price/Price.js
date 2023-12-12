@@ -1,5 +1,5 @@
 import "./Price.css"
-import Input from "../../components/Input";
+import Input from "../../Input"
 
 function Price({handleChange}) {
     return (
