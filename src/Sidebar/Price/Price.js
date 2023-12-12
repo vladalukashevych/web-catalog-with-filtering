@@ -7,7 +7,7 @@ function Price({handleChange}) {
             <h2 className="sidebar-title price-title">Price</h2>
 
             <label className="sidebar-label-container">
-                <input onChange={handleChange} type="radio" value="" name="price" checked />
+                <input onChange={handleChange} type="radio" value="" name="price" />
                 <span className="checkmark"></span>All
             </label>
 

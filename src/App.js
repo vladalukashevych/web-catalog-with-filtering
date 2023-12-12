@@ -38,8 +38,8 @@ function App() {
     const handleClick = (event) => {
         let clickedButton = event.target;
 
-        let name = clickedButton.name;
-        let value = clickedButton.value;
+        let name = event.target.name;
+        let value = event.target.value;
         
         setSelectedCategory({
           ...selectedCategory, 
@@ -51,7 +51,7 @@ function App() {
 
         let btns = clickedButton.parentNode.childNodes;
         btns.forEach(element => element.classList.remove("recommended-selected"));
-        
+
         clickedButton.classList.toggle("recommended-selected");
     }
     function filteredData(products, selected, query) {
