@@ -22,10 +22,10 @@ function MainPage() {
             <img src="https://arktura.com/wp-content/uploads/2020/05/Arktura-Vapor-Trail-Feature-Shoe-Store-Las-VegasNV_Web_1-1-scaled.jpg" className="main-photo" />
           </a>
           <div className="main-content">
-            <span className="main-title">Hello there! Welcome to our online store.</span>
+            <span className="main-title">Hello there! Welcome to our online catalog.</span>
             <span className="main-title-desc">
-                But do not forget that we are always waiting for you to visit our
-                <a data-fancybox="map" href="http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16"> local store </a> 
+              Check out what you like and come to
+                <a data-fancybox="map" href="http://maps.google.com/?ll=48.857995,2.294297&spn=0.007666,0.021136&t=m&z=16"> our store </a> 
                 =)
             </span>
           </div>
