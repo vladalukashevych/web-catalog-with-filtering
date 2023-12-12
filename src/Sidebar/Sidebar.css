@@ -1,7 +1,8 @@
 .sidebar-title {
     font-size: 22px;
-    font-weight: normal;
+    font-weight: bolder;
     margin-bottom: 20px;
+    font-family: Monospace, sans-serif;
 }
 
 .sidebar {
@@ -95,11 +96,6 @@
     background: white;
 }
 
-.sidebar-title {
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
 
 .sidebar-items {
     margin-top: 20px;
@@ -115,6 +111,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: monospace;
+    font-size: 0.85rem;
 }
 
 
