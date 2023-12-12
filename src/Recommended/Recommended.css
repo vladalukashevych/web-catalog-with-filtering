@@ -23,4 +23,17 @@
 
 .btns:hover {
     background: #f1f1f1;
+    position: relative;
+    bottom: 2px;
+    transition: 100ms;
+}
+
+.recommended-selected {
+    color: #fff;
+    background-color: #d48c00;
+    transition: 100ms;
+}
+
+.recommended-selected:hover {
+    background-color: #DAA94C;
 }
