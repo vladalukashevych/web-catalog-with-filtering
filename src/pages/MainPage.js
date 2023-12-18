@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import "./style.css"
-import Logo from "../components/Logo/Logo";
-import Button from "../components/Button";
+import Logo from "../components/SmallComponents/Logo/Logo";
+import Button from "../components/SmallComponents/Button";
 import Footer from "../components/Footer/Footer";
 
 function MainPage() {

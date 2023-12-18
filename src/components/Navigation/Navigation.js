@@ -1,8 +1,8 @@
 import {FiHeart} from "react-icons/fi"
 import {AiOutlineShoppingCart, AiOutlineUserAdd} from "react-icons/ai"
-import "./Nav.css"
+import "./Navigation.css"
 
-const Nav = ({handleInputChange, query}) => {
+const Navigation = ({handleInputChange, query}) => {
     return (
         <nav>
             <div className="nav-container">
@@ -18,4 +18,4 @@ const Nav = ({handleInputChange, query}) => {
     );
 }
 
-export default Nav;
+export default Navigation;

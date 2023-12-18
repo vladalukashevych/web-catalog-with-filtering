@@ -2,7 +2,7 @@ import "./Sidebar.css";
 import Category from "./Category/Category";
 import Price from "./Price/Price";
 import Colors from "./Colors/Colors";
-import Logo from "../Logo/Logo";
+import Logo from "../SmallComponents/Logo/Logo";
 
 function Sidebar({handleChange}) {
     return (<>

@@ -1,4 +1,4 @@
-import Button from "../Button";
+import Button from "../SmallComponents/Button";
 import "./Recommended.css"
 
 function Recommended({handleClick}) {

@@ -1,11 +1,11 @@
 import {useState} from "react";
 
 import "./style.css"
-import Navigation from "../components/Navigation/Nav";
+import Navigation from "../components/Navigation/Navigation";
 import Products from "../components/Products/Products";
 import Recommended from "../components/Recommended/Recommended";
 import Sidebar from "../components/Sidebar/Sidebar";
-import Card from "../components/Card";
+import Card from "../components/SmallComponents/Card";
 
 import products from "../db/data";
 import Footer from "../components/Footer/Footer";

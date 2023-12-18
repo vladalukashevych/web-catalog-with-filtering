@@ -1,5 +1,5 @@
 import "./Colors.css"
-import Input from "../../Input"
+import Input from "../../SmallComponents/Input"
 
 function Colors({handleChange}) {
     return (

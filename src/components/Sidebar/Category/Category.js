@@ -1,5 +1,5 @@
 import "./Category.css"
-import Input from "../../Input"
+import Input from "../../SmallComponents/Input"
 
 function Category({handleChange}) {
     return (
