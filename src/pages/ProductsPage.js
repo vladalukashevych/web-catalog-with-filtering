@@ -1,5 +1,3 @@
-import {useState} from "react";
-
 import "./style.css"
 import Navigation from "../components/Navigation/Navigation";
 import Products from "../components/Products/Products";
@@ -9,16 +7,19 @@ import Card from "../components/SmallComponents/Card";
 
 import products from "../db/data";
 import Footer from "../components/Footer/Footer";
+import {setQuery, setSelectedCategory} from "../toolkitRedux/productsSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 
 function ProductsPage() {
-    const [selectedCategory, setSelectedCategory] = useState({});
+
+    const dispatch = useDispatch();
+    const { selectedCategory, query } = useSelector((state) => state.products);
 
     //---------------Input Filter---------------
-    const[query, setQuery] = useState("");
 
-    const handleInputChange = event => {
-        setQuery(event.target.value)
+    const handleInputChange = (event) => {
+        dispatch(setQuery(event.target.value));
     };
 
     const filteredItems = products.filter(
@@ -26,36 +27,27 @@ function ProductsPage() {
     );
 
     //---------------Radio Filter---------------
-    const handleChange = event => {
-        let name = event.target.name;
-        let value = event.target.value;
-
-        setSelectedCategory({
-          ...selectedCategory, 
-          [name]: value,
-        });
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        dispatch(setSelectedCategory({ ...selectedCategory, [name]: value }));
     };
 
+
     //---------------Buttons Filter---------------
+
     const handleClick = (event) => {
-        let clickedButton = event.target;
+        const clickedButton = event.target;
+        const name = event.target.name;
+        const value = event.target.value;
 
-        let name = event.target.name;
-        let value = event.target.value;
-        
-        setSelectedCategory({
-          ...selectedCategory, 
-          [name]: value,
-        });
-        
+        dispatch(setSelectedCategory({ ...selectedCategory, [name]: value }));
+
         // Changing color
-        
+        const btns = clickedButton.parentNode.childNodes;
+        btns.forEach((element) => element.classList.remove('recommended-selected'));
+        clickedButton.classList.toggle('recommended-selected');
+    };
 
-        let btns = clickedButton.parentNode.childNodes;
-        btns.forEach(element => element.classList.remove("recommended-selected"));
-
-        clickedButton.classList.toggle("recommended-selected");
-    }
     function filteredData(products, selected, query) {
       let filteredProducts = products;
 

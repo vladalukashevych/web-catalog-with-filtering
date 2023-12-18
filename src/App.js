@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './pages/MainPage.js';
-import Products from './pages/ProductListPage.js';
+import Products from './pages/ProductsPage.js';
 
 const App = () => {
   return (
