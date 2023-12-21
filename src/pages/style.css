@@ -26,10 +26,11 @@
     object-fit: cover;
 }
 
-.btn-show {
-    width: 250px;
-    height: 70px;
+.btn-main {
+    width: 200px;
+    height: 50px;
     border-radius: 10px;
+    border: none;
     background-color: #d48c00;
     color: white;
     text-transform: uppercase;
@@ -42,9 +43,14 @@
     transition: 500ms;
 }
 
-.btn-show:hover {
+.btn-main:hover {
     transition: 500ms;
     background-color: #865b01;
+}
+
+.header-btns {
+    display: flex;
+    gap: 20px;
 }
 
 .main-content {

@@ -16,7 +16,10 @@ function MainPage() {
       <div className="wrapper">
           <div className="header">
             <Logo withName={true}/>
-            <a className="btn-show" href="\products">Show Sneakers</a>
+            <div className="header-btns">
+              <a className="btn-main" href="\products">Show Sneakers</a>
+              <a className="btn-main" href="\contact">Contact me</a>
+            </div>
           </div>
           <a data-fancybox className="main-photo" href="https://arktura.com/wp-content/uploads/2020/05/Arktura-Vapor-Trail-Feature-Shoe-Store-Las-VegasNV_Web_1-1-scaled.jpg">
             <img src="https://arktura.com/wp-content/uploads/2020/05/Arktura-Vapor-Trail-Feature-Shoe-Store-Las-VegasNV_Web_1-1-scaled.jpg" className="main-photo" />
