@@ -21,7 +21,7 @@ const ContactForm = () => {
         console.log('Server Response:', response.data.message);
 
         setErrorMessage('Form data submitted successfully!');
-        navigate('/products');
+        navigate('/');
     } catch (error) {
         console.error('Error submitting form data:', error.message);
         setErrorMessage('An error occurred. Please try again later.');
@@ -29,20 +29,21 @@ const ContactForm = () => {
 };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label>
-        Your Name:
-        <input type="text" {...register('name')} required/>
-      </label>
-      <br />
-      <label>
-        Your Email:
-        <input type="email" {...register('email')} required/>
-      </label>
-      <br />
-      <button type="submit" className='btn-main'>Submit</button>
-      {errorMessage && <p>{errorMessage}</p>}
-    </form>
+      <form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
+          <h2>Leave your contacts and we'll be sure to get back to you!</h2>
+          <label>
+              Your Name:
+              <input type="text" {...register('name')} required/>
+          </label>
+          <br/>
+          <label>
+              Your Email:
+              <input type="email" {...register('email')} required/>
+          </label>
+          <br/>
+          <button type="submit" className='btn-main'>Submit</button>
+          {errorMessage && <p>{errorMessage}</p>}
+      </form>
   );
 };
 
